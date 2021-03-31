@@ -1,0 +1,37 @@
+.promo {
+  margin-bottom: 20px;
+}
+
+.promo__wrapper {
+  position: relative;
+  padding: 20px 20px 170px;
+  margin-bottom: 150px;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-green;
+  background-image: url("../img/bg/cat-green-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__title {
+  width: 260px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__text {
+  width: 210px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  position: absolute;
+  bottom: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+}

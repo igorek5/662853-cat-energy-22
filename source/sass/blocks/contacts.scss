@@ -1,0 +1,22 @@
+.contacts__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.contacts__text {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-black2;
+}
+
+.contacts__address {
+  font-family: $font-family--arial;
+  flex-grow: 1;
+  line-height: 20px;
+  color: $color-dark-grey;
+  text-align: right;
+}

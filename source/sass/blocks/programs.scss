@@ -1,0 +1,70 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  position: relative;
+  background-color: $color-grey;
+  padding: 30px 20px 0 20px;
+  margin-bottom: 20px;
+}
+
+.programs__icon {
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  background-color: $color-green;
+  border-radius: 50%;
+}
+
+.programs__icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.programs__icon--slim::before {
+  width: 50px;
+  height: 53px;
+  background-image: url("../img/svg/cat-slim.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.programs__icon--pro::before {
+  width: 67px;
+  height: 50px;
+  background-image: url("../img/svg/cat-pro.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.programs__title {
+  margin: 0 0 30px 90px;
+  margin-left: 70px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $font-family--arial;
+}
+
+.programs__link {
+  display: block;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid $color-grey3;
+}
