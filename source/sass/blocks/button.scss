@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  padding: 10px 20px;
+  font-family: $font-family--oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $color-green;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-green2;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
+}

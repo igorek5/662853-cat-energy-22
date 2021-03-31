@@ -1,0 +1,49 @@
+.advantages__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-image: url("../img/svg/icon-leaf.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--tub::before {
+    background-image: url("../img/svg/icon-tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/svg/icon-eat.svg");
+  }
+
+  &--libra::before {
+    background-image: url("../img/svg/icon-libra.svg");
+  }
+}
+
+.advantages__text {
+  font-family: $font-family--arial;
+  margin: 0;
+  color: $color-dark-grey;
+}
+
