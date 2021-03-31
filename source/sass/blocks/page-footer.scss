@@ -8,3 +8,18 @@
   border-top: 1px solid $color-grey3;
   border-bottom: 1px solid $color-grey3;
 }
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-footer__copyright-text {
+  font-family: $font-family--arial;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-dark-grey;
+}

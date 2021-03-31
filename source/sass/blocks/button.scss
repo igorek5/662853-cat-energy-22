@@ -11,13 +11,13 @@
   background-color: $color-green;
   border: 0;
   cursor: pointer;
-}
 
-.button:hover,
-.button:focus {
-  background-color: $color-green2;
-}
+  &:hover,
+  &:focus {
+    background-color: $color-green2;
+  }
 
-.button:active {
-  color: rgba($color-white, 0.3);
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
 }

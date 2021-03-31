@@ -20,3 +20,9 @@
   color: $color-dark-grey;
   text-align: right;
 }
+
+.contacts__map-image {
+  width: 800px;
+  min-height: 100%;
+  object-fit: cover;
+}

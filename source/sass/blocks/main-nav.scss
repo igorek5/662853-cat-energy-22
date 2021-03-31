@@ -50,15 +50,15 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-}
 
-.main-nav__link:hover,
-.main-nav__link:focus {
-  opacity: 0.6;
-}
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-.main-nav__link:focus {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__link.active {
