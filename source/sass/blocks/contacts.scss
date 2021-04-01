@@ -7,22 +7,26 @@
 .contacts__text {
   flex-grow: 1;
   margin: 0;
+
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: $color-black2;
+  text-transform: uppercase;
 }
 
 .contacts__address {
-  font-family: $font-family--arial;
   flex-grow: 1;
+
+  font-style: normal;
   line-height: 20px;
-  color: $color-dark-grey;
+  font-family: $font-family--arial;
   text-align: right;
+  color: $color-dark-grey;
 }
 
 .contacts__map-image {
   width: 800px;
   min-height: 100%;
+
   object-fit: cover;
 }

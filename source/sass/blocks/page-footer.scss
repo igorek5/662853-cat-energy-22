@@ -2,6 +2,19 @@
   display: flex;
   justify-content: center;
   padding: 20px 15px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:not(a[href]) {
+    pointer-events: none;
+  }
 }
 
 .page-footer__social {
@@ -18,8 +31,8 @@
 }
 
 .page-footer__copyright-text {
-  font-family: $font-family--arial;
   font-size: 16px;
   line-height: 18px;
+  font-family: $font-family--arial;
   color: $color-dark-grey;
 }

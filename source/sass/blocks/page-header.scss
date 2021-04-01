@@ -1,4 +1,18 @@
 .page-header__logo {
   display: block;
   padding: 12px 20px 15px;
+  border-bottom: 1px solid $color-grey2;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:not(a[href]) {
+    pointer-events: none;
+  }
 }

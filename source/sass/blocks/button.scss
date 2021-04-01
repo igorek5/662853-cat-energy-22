@@ -1,13 +1,15 @@
 .button {
   display: block;
   padding: 10px 20px;
-  font-family: $font-family--oswald;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: $font-family--oswald;
+  text-align: center;
   color: $color-white;
   text-transform: uppercase;
-  text-align: center;
+
   background-color: $color-green;
   border: 0;
   cursor: pointer;

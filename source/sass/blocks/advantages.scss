@@ -7,25 +7,29 @@
 .advantages__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .advantages__item {
   position: relative;
-  padding-left: 80px;
+
   margin-bottom: 20px;
+  padding-left: 80px;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+
     width: 60px;
     height: 60px;
+
     background-color: $color-green;
     background-image: url("../img/svg/icon-leaf.svg");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--tub::before {
@@ -42,8 +46,8 @@
 }
 
 .advantages__text {
-  font-family: $font-family--arial;
   margin: 0;
+
+  font-family: $font-family--arial;
   color: $color-dark-grey;
 }
-
