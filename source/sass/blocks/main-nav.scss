@@ -6,21 +6,25 @@
   position: absolute;
   top: -46px;
   right: 20px;
+
   width: 24px;
   height: 24px;
-  border: none;
+
   background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
 .main-nav__toggle::before,
 .main-nav__toggle::after {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 12px;
   left: 0;
+
   width: 24px;
   height: 1px;
+
   background-color: $color-black;
 }
 
@@ -35,6 +39,7 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -45,11 +50,12 @@
 .main-nav__link {
   display: block;
   padding: 15px 20px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
