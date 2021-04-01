@@ -1,3 +1,7 @@
+.contacts--inner {
+  background-color: $color-grey;
+}
+
 .contacts__block {
   display: flex;
   justify-content: space-between;
@@ -10,7 +14,7 @@
 
   font-size: 16px;
   line-height: 18px;
-  color: $color-black2;
+  color: $color-black1;
   text-transform: uppercase;
 }
 

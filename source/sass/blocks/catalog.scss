@@ -1,0 +1,140 @@
+.catalog {
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+.catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  padding: 19px 20px 0 20px;
+
+  border-top: 1px solid $color-grey2;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.catalog__info {
+  min-width: 140px;
+  margin-bottom: 15px;
+}
+
+.catalog__product-title {
+  width: 100px;
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__block {
+  width: 140px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-family--arial;
+  color: $color-dark-grey;
+}
+
+.catalog__string {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0;
+}
+
+.catalog__value {
+  text-align: end;
+  margin: 0;
+}
+
+.catalog__button {
+  flex-grow: 1;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog__showing {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px;
+
+  border-top: 1px solid $color-grey2;
+  border-bottom: 1px solid $color-grey2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 50%;
+
+    width: 30px;
+    height: 2px;
+    margin-left: -15px;
+
+    background-color: $color-grey6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+
+    width: 2px;
+    height: 30px;
+    margin-left: -1px;
+
+    background-color: $color-grey6;
+  }
+}
+
+.catalog__showing-title {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-black1;
+}
+
+.catalog__showing-text {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-family--arial;
+  color: $color-dark-grey;
+}
+
+.catalog__showing-button {
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-dark-grey;
+
+  background-color: $color-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $color-grey2;
+  }
+
+  &:active {
+    color: rgba($color-dark-grey, 0.3);
+  }
+}
