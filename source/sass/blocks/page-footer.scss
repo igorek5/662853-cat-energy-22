@@ -2,6 +2,19 @@
   display: flex;
   justify-content: center;
   padding: 20px 15px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:not(a[href]) {
+    pointer-events: none;
+  }
 }
 
 .page-footer__social {
