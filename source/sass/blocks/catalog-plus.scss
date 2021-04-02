@@ -1,0 +1,87 @@
+.catalog-plus {
+  margin-bottom: 35px;
+}
+
+.catalog-plus__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.catalog-plus__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-plus__item {
+  margin-bottom: 20px;
+  padding-top: 20px;
+
+  border-top: 1px solid $color-grey5;
+
+  &:last-child {
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid $color-grey5;
+  }
+}
+
+.catalog-plus__product-title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-black2;
+}
+
+.catalog-plus__info {
+  display: grid;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $font-family--arial;
+  color: $color-dark-grey;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.catalog-plus__value {
+  margin: 0;
+
+  text-align: end;
+}
+
+.catalog-plus__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-plus__promo {
+  padding: 185px 55px 45px 55px;
+
+  text-align: center;
+
+  background-color: $color-green;
+  background-image: url("../img/bg/cat-case.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.catalog-plus__promo-text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family--arial;
+  color: $color-white;
+}
