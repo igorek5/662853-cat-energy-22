@@ -1,5 +1,11 @@
 .page-footer {
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
@@ -24,6 +30,10 @@
 .page-footer__social {
   border-top: 1px solid $color-grey3;
   border-bottom: 1px solid $color-grey3;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .page-footer__copyright {

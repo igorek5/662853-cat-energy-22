@@ -5,6 +5,32 @@
   background-color: $color-grey4;
 }
 
+.example__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
+    padding-left: 110px;
+  }
+}
+
+.example__block {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-right: 60px;
+  }
+}
+
 .example__title {
   margin: 0;
   margin-bottom: 30px;
@@ -12,6 +38,15 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 140px;
+  }
 }
 
 .example__text {
@@ -19,16 +54,28 @@
   margin-bottom: 25px;
 
   font-family: $font-family--arial;
+  color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    max-width: 820px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__result {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: stretch;
+  }
 }
 
 .example__item {
-  width: 124px;
+  width: 45%;
   margin: 0;
   margin-bottom: 20px;
   padding: 10px;
@@ -37,12 +84,26 @@
 
   border: 1px solid $color-grey5;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    margin-right: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
 }
 
 .example__term {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__value {
@@ -52,22 +113,54 @@
   font-size: 12px;
   line-height: 12px;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__costs {
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
   margin: 0;
   margin-bottom: 40px;
 
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 100%;
+    margin-right: auto;
+  }
 }
 
 .example__food {
   margin-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .example__price {

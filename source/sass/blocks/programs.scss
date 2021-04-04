@@ -1,8 +1,20 @@
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 60px;
+  }
+}
+
 .programs__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -12,18 +24,47 @@
   padding: 30px 20px 0 20px;
 
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 280px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 75px 50px 55px;
+  }
 }
 
 .programs__icon {
   position: absolute;
   top: 24px;
-  left: 22px;
 
   width: 50px;
   height: 50px;
 
   background-color: $color-green;
   border-radius: 50%;
+
+  @media (max-width: $tablet-width - 1) {
+    left: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 92px;
+    right: 62px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 25px;
+    left: 52px;
+
+    width: 100px;
+    height: 100px;
+  }
 
   &::before {
     content: "";
@@ -35,12 +76,26 @@
   }
 
   &--slim::before {
-    width: 50px;
-    height: 53px;
+    width: 36px;
+    height: 50px;
 
     background-image: url("../img/svg/cat-slim.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 192px;
+
+      background-size: 140px 192px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+
+      background-size: 70px 97px;
+    }
   }
 
   &--pro::before {
@@ -50,6 +105,20 @@
     background-image: url("../img/svg/cat-pro.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 200px;
+
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 56px;
+
+      background-size: 134px 56px;
+    }
   }
 }
 
@@ -61,6 +130,18 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .programs__text {
@@ -68,6 +149,11 @@
   margin-bottom: 20px;
 
   font-family: $font-family--arial;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programs__link {
@@ -79,4 +165,11 @@
   text-transform: uppercase;
 
   border-top: 1px solid $color-grey3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    border-top: none;
+  }
 }
