@@ -1,38 +1,11 @@
 .page-header {
   margin-bottom: 10px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header--index {
-    position: relative;
-  }
-
-  .page-header--index::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 50%;
-    z-index: -2;
-
-    background-color: $color-green;
-    background-image: url("../img/bg/cat-desktop-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     padding: 25px 30px;
   }

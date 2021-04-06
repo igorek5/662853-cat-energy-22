@@ -11,8 +11,9 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
     justify-content: space-between;
   }
 }
@@ -27,11 +28,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 280px 53px 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
     padding: 75px 50px 55px;
+    margin-bottom: 0;
   }
 }
 
