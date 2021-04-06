@@ -1,22 +1,18 @@
 .example {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 120px 0;
 
   background-color: $color-grey4;
-}
 
-.example__wrapper {
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, $color-grey 48%, $color-white 0);
+  }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 110px;
-    padding-left: 110px;
+    background: linear-gradient(to top, $color-grey 72%, $color-white 0);
   }
 }
 
-.example__block {
+.example__wrapper {
   padding-right: 20px;
   padding-left: 20px;
 
@@ -26,8 +22,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-right: 60px;
+    position: relative;
+
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }
 
@@ -40,12 +38,23 @@
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 140px;
+    width: 50%;
+    margin-bottom: 75px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__content {
+    width: 50%;
+    padding-right: 40px;
   }
 }
 
@@ -62,6 +71,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .example__result {
@@ -71,6 +84,10 @@
 
   @media (min-width: $tablet-width) {
     justify-content: stretch;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
   }
 }
 
@@ -165,4 +182,12 @@
 
 .example__price {
   margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .example__slider {
+    position: absolute;
+    top: -60px;
+    right: 110px;
+  }
 }

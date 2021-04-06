@@ -1,7 +1,14 @@
 .container {
   min-width: $mobile-width;
-  max-width: $desktop-width;
   margin: 0 auto;
+
+  @media (min-width: $laptop-width) {
+    max-width: $laptop-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+  }
 }
 
 .wrapper {

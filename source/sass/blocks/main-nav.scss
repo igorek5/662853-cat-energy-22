@@ -1,5 +1,14 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding-left: 80px;
+  }
 }
 
 .main-nav__toggle {
@@ -47,23 +56,10 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 440px;
-  }
+    display: grid;
 
-  @media (min-width: $tablet-width) {
-    width: 480px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__item {
-    margin-left: 20px;
-
-    &:first-child {
-      margin-left: 0;
-    }
+    grid-gap: 40px;
+    grid-template-columns: max-content max-content max-content;
   }
 }
 
@@ -80,11 +76,13 @@
   border-bottom: 1px solid $color-grey2;
 
   @media (min-width: $tablet-width) {
+    display: inline;
     padding: 5px 0;
 
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    text-align: start;
 
     border-bottom: none;
   }

@@ -1,6 +1,8 @@
 .page-footer {
   background-color: $color-grey;
+}
 
+.page-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +44,11 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+
+  @media (max-width: $tablet-width - 1) {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__copyright-text {
