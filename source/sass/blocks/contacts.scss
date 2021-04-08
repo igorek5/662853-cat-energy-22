@@ -1,17 +1,15 @@
-@media (min-width: $desktop-width) {
-  .contacts {
-    background-color: $color-grey;
-  }
-}
-
 .contacts--inner {
   background-color: $color-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-white;
+  }
 }
 
 .contacts__wrapper {
   position: relative;
 
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
@@ -19,8 +17,6 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 20px;
-
-  background-color: $color-white;
 
   @media (min-width: $tablet-width) {
     padding: 66px 71px 50px;
@@ -33,17 +29,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 92px;
+    left: 0;
 
     width: 570px;
-  }
-}
 
-.contacts__block--inner {
-  background-color: $color-grey;
-
-  @media (min-width: $desktop-width) {
     background-color: $color-white;
   }
 }
