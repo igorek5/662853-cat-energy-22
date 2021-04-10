@@ -56,4 +56,22 @@
   line-height: 18px;
   font-family: $font-family--arial;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+.page-footer__copyright:hover .page-footer__copyright-icon,
+.page-footer__copyright:focus .page-footer__copyright-icon {
+  fill: $color-green;
+}
+
+.page-footer__copyright:active .page-footer__copyright-icon {
+  fill: $color-green;
+}
+
+.page-footer__copyright:active {
+  opacity: 0.3;
 }

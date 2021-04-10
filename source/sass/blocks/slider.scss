@@ -1,16 +1,36 @@
 .slider {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+
+    background: linear-gradient(to bottom, $color-white 160px, $color-grey 160px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+  }
+}
+
+.slider__wrapper {
   width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -210px;
+
+    margin-bottom: -210px;
   }
 }
 
 .slider__images {
   position: relative;
-  display: flex;
 
+  display: flex;
   width: 320px;
   height: 240px;
   margin-bottom: 30px;
@@ -22,14 +42,23 @@
 }
 
 .slider__image--before {
-  width: 50%;
+  width: 100%;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .slider__image--after {
   position: relative;
-  width: 50%;
+
+  width: 0;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .slider__cat-before {
@@ -44,8 +73,9 @@
 
 .slider__cat-after {
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
+
   max-width: 320px;
 }
 
@@ -79,15 +109,71 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+
+    border-bottom: 1px dotted $color-grey3;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $color-grey3;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .slider__toggle {
     width: 428px;
+  }
+}
+
+.slider__toggle {
+  width: 84px;
+  height: 14px;
+  padding: 4px 6px;
+
+  border: 1px solid $color-grey5;
+  border-radius: 6px;
+  outline: none;
+
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    padding: 0;
+
+    background-color: $color-grey5;
+  }
+}
+
+.slider__toggle::-webkit-slider-thumb {
+  width: 35px;
+  height: 6px;
+  margin-right: auto;
+
+  background-color: $color-green;
+  border-radius: 6px;
+  cursor: pointer;
+
+  appearance: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: $color-green;
+    border: 13px solid $color-white;
+    border-radius: 50%;
+    box-shadow: inset 0 0 1px $color-grey5;
   }
 }

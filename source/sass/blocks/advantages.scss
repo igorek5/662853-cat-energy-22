@@ -1,3 +1,13 @@
+.advantages {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 35px;
@@ -24,8 +34,8 @@
     display: grid;
     margin-bottom: 0;
 
-    grid-column-gap: 118px;
-    grid-row-gap: 40px;
+    grid-column-gap: 110px;
+    grid-row-gap: 110px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -87,4 +97,21 @@
 
   font-family: $font-family--arial;
   color: $color-dark-grey;
+}
+
+.advantages__number {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -40px;
+    left: 115px;
+    z-index: -1;
+
+    display: block;
+
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+  }
 }
