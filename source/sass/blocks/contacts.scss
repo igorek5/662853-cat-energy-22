@@ -11,7 +11,7 @@
   background-color: $color-grey;
 
   @media (min-width: $desktop-width) {
-    background-color: $color-white;
+    background-color: transparent;
   }
 }
 
