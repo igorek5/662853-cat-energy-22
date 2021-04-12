@@ -13,6 +13,7 @@
 .slider__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
