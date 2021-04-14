@@ -16,10 +16,14 @@
       z-index: -2;
 
       background-color: $color-green;
-      background-image: url("../img/bg/cat-desktop-bg.jpg");
+      background-image: url("../img/bg/cat-desktop-bg@1x.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg/cat-desktop-bg@2x.jpg");
+      }
     }
   }
 }

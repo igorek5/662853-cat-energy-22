@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon180x.png">
+  <link rel="manifest" href="favicons.webmanifest">
 </head>
 
 <body class="page-body">
@@ -15,7 +19,12 @@
       <div class="container">
         <div class="page-header__wrapper">
           <a class="page-header__logo">
-            <img src="img/svg/logo-header.svg" width="190" height="38" alt="Логотип «Cat energy»">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/svg/logo-header-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/logo-header-tablet.svg">
+              <img class="page-header__logo-image" src="img/svg/logo-header.svg" width="190" height="38"
+                alt="Логотип «Cat energy»">
+            </picture>
           </a>
           <nav class="page-header__nav main-nav open">
             <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
@@ -39,8 +48,14 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/content/index-can.png" width="280" height="270"
-          alt="Cat-energy pro с курицей 500 г.">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/content/index-can-desktop@1x.png 1x, img/content/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/content/index-can-tablet@1x.png 1x, img/content/index-can-tablet@2x.png 2x">
+          <img class="promo__image" src="img/content/index-can@1x.png" srcset="img/content/index-can@2x.png 2x"
+            width="280" height="270" alt="Cat-energy pro с курицей 500 г.">
+        </picture>
       </div>
       <div class="promo__wrapper-button">
         <a class="button" href="form.html">Подобрать программу</a>
@@ -122,12 +137,20 @@
             <div class="slider__wrapper">
               <div class="slider__images">
                 <div class="slider__image slider__image--before">
-                  <img class="slider__cat-before" src="img/content/before-cat.png" alt="Толстый кот" width="320"
-                    height="240">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/content/before-cat-tablet@1x.png 1x, img/content/before-cat-tablet@2x.png 2x">
+                    <img class="slider__cat-before" src="img/content/before-cat@1x.png"
+                      srcset="img/content/before-cat@2x.png 2x" alt="Толстый кот" width="320" height="240">
+                  </picture>
                 </div>
                 <div class="slider__image slider__image--after">
-                  <img class="slider__cat-after" src="img/content/after-cat.png" alt="Тонкий кот" width="320"
-                    height="240">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/content/after-cat-tablet@1x.png 1x, img/content/after-cat-tablet@2x.png 2x">
+                    <img class="slider__cat-after" src="img/content/after-cat@1x.png"
+                      srcset="img/content/after-cat@2x.png 2x" alt="Тонкий кот" width="320" height="240">
+                  </picture>
                 </div>
               </div>
               <div class="slider__range">
@@ -157,8 +180,12 @@
       </div>
 
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/content/location.jpg" width="320" height="362"
-          alt="Мы находимся по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/content/location-desktop@1x.jpg 1x, img/content/location-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/content/location-tablet@1x.jpg 1x, img/content/location-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="img/content/location@1x.jpg" srcset="img/content/location@2x.jpg 2x"
+            width="320" height="362" alt="Мы находимся по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </picture>
       </div>
     </section>
 
