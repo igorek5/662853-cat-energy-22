@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/favicon180x.png">
+  <link rel="manifest" href="favicons.webmanifest">
 </head>
 
 <body class="page-body">
@@ -14,7 +18,12 @@
     <div class="container">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img src="img/svg/logo-header.svg" width="190" height="38" alt="Логотип «Cat energy»">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/svg/logo-header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-header-tablet.svg">
+            <img class="page-header__logo-image" src="img/svg/logo-header.svg" width="190" height="38"
+              alt="Логотип «Cat energy»">
+          </picture>
         </a>
         <nav class="page-header__nav main-nav open">
           <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
@@ -40,8 +49,15 @@
         <div class="catalog__list">
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/chicken-500g.png" alt="Cat energy pro 500г. курица"
-                width="140" height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/chicken-500g-desktop@1x.png 1x, img/content/chicken-500g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/chicken-500g-tablet@1x.png 1x, img/content/chicken-500g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/chicken-500g@1x.png"
+                  srcset="img/content/chicken-500g@2x.png 2x" alt="Cat energy pro 500г. курица" width="140"
+                  height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -67,8 +83,15 @@
 
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/chicken-1000g.png" alt="Cat energy pro 1000г. курица"
-                width="140" height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/chicken-1000g-desktop@1x.png 1x, img/content/chicken-1000g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/chicken-1000g-tablet@1x.png 1x, img/content/chicken-1000g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/chicken-1000g@1x.png"
+                  srcset="img/content/chicken-1000g@2x.png 2x" alt="Cat energy pro 500г. курица" width="140"
+                  height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -94,8 +117,14 @@
 
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/fish-500g.png" alt="Cat energy pro 500г. рыба" width="140"
-                height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/fish-500g-desktop@1x.png 1x, img/content/fish-500g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/fish-500g-tablet@1x.png 1x, img/content/fish-500g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/fish-500g@1x.png" srcset="img/content/fish-500g@2x.png 2x"
+                  alt="Cat energy pro 500г. курица" width="140" height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -121,8 +150,14 @@
 
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/fish-1000g.png" alt="Cat energy pro 1000г. рыба" width="140"
-                height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/fish-1000g-desktop@1x.png 1x, img/content/fish-1000g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/fish-1000g-tablet@1x.png 1x, img/content/fish-1000g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/fish-1000g@1x.png"
+                  srcset="img/content/fish-1000g@2x.png 2x" alt="Cat energy pro 500г. курица" width="140" height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -148,8 +183,15 @@
 
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/buckwheat-500g.png" alt="Cat energy slim 500г. гречка"
-                width="140" height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/buckwheat-500g-desktop@1x.png 1x, img/content/buckwheat-500g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/buckwheat-500g-tablet@1x.png 1x, img/content/buckwheat-500g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/buckwheat-500g@1x.png"
+                  srcset="img/content/buckwheat-500g@2x.png 2x" alt="Cat energy pro 500г. курица" width="140"
+                  height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -175,8 +217,15 @@
 
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/buckwheat-1000g.png" alt="Cat energy slim 1000г. гречка"
-                width="140" height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/buckwheat-1000g-desktop@1x.png 1x, img/content/buckwheat-1000g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/buckwheat-1000g-tablet@1x.png 1x, img/content/buckwheat-1000g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/buckwheat-1000g@1x.png"
+                  srcset="img/content/buckwheat-1000g@2x.png 2x" alt="Cat energy pro 500г. курица" width="140"
+                  height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -202,8 +251,14 @@
 
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
-              <img class="catalog__image" src="img/content/rice-500g.png" alt="Cat energy slim 500г. рис" width="140"
-                height="112">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/rice-500g-desktop@1x.png 1x, img/content/rice-500g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/rice-500g-tablet@1x.png 1x, img/content/rice-500g-tablet@2x.png 2x">
+                <img class="catalog__image" src="img/content/rice-500g@1x.png" srcset="img/content/rice-500g@1x.png 2x"
+                  alt="Cat energy pro 500г. курица" width="140" height="112">
+              </picture>
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
@@ -294,8 +349,14 @@
       </div>
 
       <div class="contacts__map">
-        <img class="contacts__map-image" src="img/content/location.jpg" width="320" height="362"
-          alt="Мы находимся по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/content/location-desktop@1x.jpg 1x, img/content/location-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/content/location-tablet@1x.jpg 1x, img/content/location-tablet@2x.jpg 2x">
+          <img class="contacts__map-image" src="img/content/location@1x.jpg" srcset="img/content/location@2x.jpg 2x"
+            width="320" height="362" alt="Мы находимся по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </picture>
       </div>
     </section>
 
