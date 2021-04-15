@@ -22,10 +22,15 @@
   color: $color-white;
 
   background-color: $color-green;
-  background-image: url("../img/bg/cat-green-bg.jpg");
+  background-image: url("../img/bg/cat-green-bg@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg/cat-green-bg@2x.jpg");
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -47,6 +52,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  max-width: 320px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -54,6 +60,7 @@
 
     font-size: 60px;
     line-height: 60px;
+    max-width: none;
   }
 }
 
