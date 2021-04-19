@@ -1,23 +1,30 @@
 .advantages {
+  margin-bottom: 42px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 75px;
+    margin: 0;
+    padding-bottom: 21px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 72px;
 
     font-size: 60px;
     line-height: 60px;
@@ -29,14 +36,15 @@
   padding: 0;
 
   list-style: none;
+
   counter-reset: number 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
     margin-bottom: 0;
 
-    grid-column-gap: 110px;
-    grid-row-gap: 110px;
+    grid-column-gap: 57px;
+    grid-row-gap: 52px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -53,12 +61,14 @@
   max-width: 500px;
   min-height: 60px;
   margin-bottom: 20px;
+  padding-top: 2px;
   padding-left: 80px;
+
   counter-increment: number;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    padding: 100px 80px 80px 0;
+    padding: 113px 80px 80px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +89,11 @@
     background-image: url("../img/svg/icon-leaf.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--tub::before {
@@ -117,4 +132,9 @@
 
   font-family: $font-family--arial;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -24,10 +24,10 @@
 .contacts__block {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px;
+  padding: 30px 20px 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 71px 50px;
+    padding: 64px 71px 57px;
   }
 
   @media (min-width: $laptop-width) {
@@ -38,6 +38,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin: 0;
+    padding: 63px 75px 57px;
 
     background-color: $color-white;
   }
@@ -54,9 +55,10 @@
 
   @media (min-width: $tablet-width) {
     width: 180px;
+    margin-top: 2px;
 
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 
@@ -66,7 +68,6 @@
   font-style: normal;
   line-height: 20px;
   font-family: $font-family--arial;
-  text-align: right;
   color: $color-dark-grey;
 
   @media (min-width: $tablet-width) {
@@ -74,6 +75,13 @@
 
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+
+    text-align: start;
   }
 }
 
