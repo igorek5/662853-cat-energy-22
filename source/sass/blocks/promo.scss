@@ -1,22 +1,21 @@
-@media (min-width: $tablet-width) {
-  .promo {
+
+.promo {
+  @media (min-width: $tablet-width) {
     position: relative;
 
-    padding: 30px 82px 540px;
+    padding: 40px 113px 504px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .promo {
-    padding: 30px 190px 185px;
+  @media (min-width: $desktop-width) {
+    padding: 58px 187px 185px;
   }
 }
 
 .promo__wrapper {
   position: relative;
 
-  margin-bottom: 150px;
-  padding: 20px 20px 170px;
+  margin-bottom: 138px;
+  padding: 26px 20px 161px;
 
   text-align: center;
   color: $color-white;
@@ -37,30 +36,36 @@
 
     width: 430px;
     margin: 0;
+    margin-bottom: 50px;
     padding: 0;
+    padding-left: 4px;
 
     text-align: left;
     color: $color-black;
 
     background: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .promo__title {
-  margin: 0 auto 20px;
+  max-width: 320px;
+  margin: 0 auto 25px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  max-width: 320px;
 
   @media (min-width: $tablet-width) {
+    max-width: none;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 
     font-size: 60px;
     line-height: 60px;
-    max-width: none;
   }
 }
 
@@ -71,7 +76,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 45px;
 
     font-size: 20px;
     line-height: 20px;
@@ -80,13 +84,13 @@
 
 .promo__image {
   position: absolute;
-  bottom: -140px;
+  bottom: -134px;
   left: 50%;
 
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    bottom: 0;
+    bottom: -22px;
     z-index: -1;
 
     width: 709px;
@@ -94,7 +98,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: calc(50% + 60px);
+    bottom: 52px;
+    left: calc(50% + 115px);
 
     width: 552px;
     height: 499px;
@@ -106,8 +111,20 @@
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    max-width: 400px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 3px;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+    padding: 17px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }

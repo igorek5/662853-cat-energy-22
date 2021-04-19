@@ -1,5 +1,14 @@
 .page-footer {
   background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+  }
 }
 
 .page-footer__wrapper {
@@ -13,7 +22,11 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
-  padding: 20px 15px;
+  padding: 39px 15px 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
   &:hover,
   &:focus {
@@ -42,12 +55,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-bottom: 20px;
 
   @media (max-width: $tablet-width - 1) {
     max-width: 280px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
@@ -59,8 +76,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-right: 20px;
+    margin-right: 24px;
   }
+}
+
+.page-footer__copyright-icon {
+  fill: #666666;
 }
 
 .page-footer__copyright:hover .page-footer__copyright-icon,
