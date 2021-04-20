@@ -2,13 +2,17 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
   }
 }
 
 .catalog__title {
   margin: 0;
-  padding: 25px 20px 40px;
+  padding: 27px 20px 40px;
 
   font-weight: 400;
   font-size: 36px;
@@ -17,8 +21,8 @@
   border-bottom: 1px solid $color-grey2;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-    padding: 25px 30px 40px;
+    margin-bottom: 53px;
+    padding: 40px 30px 40px;
 
     font-size: 60px;
     line-height: 60px;
@@ -27,6 +31,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
     padding: 25px 110px 40px;
   }
 }
@@ -36,13 +41,16 @@
     display: grid;
     padding: 0 30px;
 
-    grid-gap: 60px;
+    grid-column-gap: 60px;
+    grid-row-gap: 70px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
 
+    grid-column-gap: 80px;
+    grid-row-gap: 69px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -51,20 +59,24 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid $color-grey2;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
-    padding: 0 35px 40px;
+    padding: 0 38px 40px;
 
-    background: linear-gradient(to bottom, #ffffff 100px, #f2f2f2 100px);
+    background: linear-gradient(to bottom, #ffffff 71px, #f2f2f2 71px);
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 38px 40px;
+    padding: 0;
+    padding-right: 38px;
+    padding-bottom: 40px;
+    padding-left: 41px;
   }
 }
 
@@ -85,13 +97,17 @@
 
 .catalog__image-link {
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
   }
 }
 
 .catalog__info {
   flex-grow: 1;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -102,7 +118,7 @@
 .catalog__product-title {
   width: 100px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +129,7 @@
   @media (min-width: $tablet-width) {
     width: 150px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 
     font-size: 20px;
     line-height: 24px;
@@ -137,11 +153,14 @@
   display: grid;
   align-items: center;
   margin: 0;
-  padding: 5px 0;
+  padding: 0;
 
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
     border-bottom: 1px solid $color-grey5;
   }
 }
@@ -154,6 +173,7 @@
 
 .catalog__button {
   width: 100%;
+  padding-bottom: 9px;
 
   font-size: 16px;
   line-height: 20px;
@@ -165,19 +185,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 20px 20px;
+  padding: 78px 20px 23px;
 
   border-top: 1px solid $color-grey2;
   border-bottom: 1px solid $color-grey2;
 
   @media (min-width: $tablet-width) {
-    padding: 122px 35px 40px;
+    margin-top: 71px;
+    padding: 158px 35px 40px;
 
     border: 2px solid $color-grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 100px;
   }
 
   &::before {
@@ -210,14 +227,14 @@
 
 @media (min-width: $tablet-width) {
   .catalog__showing::before {
-    top: 63px;
+    top: 80px;
 
     width: 60px;
     margin-left: -30px;
   }
 
   .catalog__showing::after {
-    top: 33px;
+    top: 51px;
 
     height: 60px;
     margin-left: -1px;
@@ -235,7 +252,7 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     font-size: 20px;
     line-height: 22px;
@@ -261,6 +278,7 @@
 
 .catalog__showing-button {
   width: 100%;
+  padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 20px;
@@ -270,6 +288,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+    padding-bottom: 7px;
   }
 
   &:hover,
