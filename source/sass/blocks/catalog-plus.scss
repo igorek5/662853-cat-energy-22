@@ -1,5 +1,13 @@
 .catalog-plus {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .catalog-plus__title {
@@ -13,13 +21,18 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-right: 37px;
+    margin-bottom: 81px;
+    margin-left: 37px;
 
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-right: 0;
+    margin-left: 0;
+
     border-bottom: none;
   }
 }
@@ -52,7 +65,7 @@
 }
 
 .catalog-plus__item {
-  padding: 20px 0;
+  padding: 13px 0 17px;
 
   border-bottom: 1px solid $color-grey5;
 
@@ -70,8 +83,7 @@
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: stretch;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 15px 0 16px;
 
     border: none;
     border-bottom: 1px solid $color-grey5;
@@ -80,7 +92,8 @@
 
 .catalog-plus__product-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+  padding-left: 1px;
 
   font-weight: 400;
   font-size: 16px;
@@ -112,7 +125,7 @@
   font-family: $font-family--arial;
   color: $color-dark-grey;
 
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr  max-content;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -122,9 +135,10 @@
   @media (min-width: $desktop-width) {
     flex-shrink: 0;
     width: 288px;
-    margin-right: 80px;
+    margin-right: 41px;
     margin-bottom: 0;
     margin-left: auto;
+    padding-top: 6px;
   }
 }
 
@@ -139,6 +153,8 @@
 }
 
 .catalog-plus__button {
+  padding-bottom: 9px;
+
   font-size: 16px;
   line-height: 20px;
 
@@ -155,8 +171,9 @@
 .catalog-plus__promo {
   position: relative;
 
-  min-height: 286px;
+  min-height: 280px;
   padding: 185px 55px 45px 55px;
+  padding-bottom: 43px;
 
   text-align: center;
 
@@ -182,6 +199,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 250px 41px 42px;
+    padding-top: 186px;
+
     background-image: url("../img/bg/cat-case-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -206,7 +225,8 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      left: 78px;
+      top: 55px;
+      left: 118px;
     }
   }
 
