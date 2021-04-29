@@ -43,7 +43,7 @@
     display: grid;
     margin-bottom: 0;
 
-    grid-column-gap: 57px;
+    grid-column-gap: 58px;
     grid-row-gap: 52px;
     grid-template-columns: 1fr 1fr;
   }
@@ -73,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding-bottom: 70px;
     padding-right: 0;
   }
 

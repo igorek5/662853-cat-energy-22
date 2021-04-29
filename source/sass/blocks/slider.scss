@@ -108,7 +108,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 195px;
+  width: 200px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -122,6 +122,7 @@
 }
 
 .slider__button {
+  margin-left: 3px;
   padding: 0;
 
   font-size: 16px;
@@ -134,6 +135,8 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
+
     font-size: 20px;
     line-height: 30px;
 
@@ -159,7 +162,8 @@
 .slider__toggle {
   width: 84px;
   height: 14px;
-  padding: 4px 6px;
+  margin-left: 6px;
+  padding: 3px 6px 4px;
 
   border: 1px solid $color-grey5;
   border-radius: 6px;
@@ -190,12 +194,20 @@
   @media (min-width: $tablet-width) {
     position: relative;
 
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
 
     background-color: $color-green;
-    border: 13px solid $color-white;
+    border: 12px solid $color-white;
     border-radius: 50%;
-    box-shadow: inset 0 0 1px $color-grey5;
+    box-shadow: 0 0 0 1px $color-grey5, 0 1px 3px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      box-shadow: 0 0 0 1px $color-grey5, 0 2px 4px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $color-green, 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
   }
 }

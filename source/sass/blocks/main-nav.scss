@@ -88,6 +88,10 @@
 
     grid-gap: 36px;
     grid-template-columns: max-content max-content max-content;
+
+    &--inner {
+      margin-top: 4px;
+    }
   }
 
   @media (min-width: $desktop-width) {

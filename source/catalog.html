@@ -16,7 +16,7 @@
 
   <header class="page-header">
     <div class="container">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper page-header__wrapper--inner">
         <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/svg/logo-header-desktop.svg">
@@ -27,7 +27,7 @@
         </a>
         <nav class="page-header__nav main-nav open">
           <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--inner">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
@@ -86,7 +86,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__item">
@@ -127,7 +129,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__item">
@@ -166,7 +170,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__item">
@@ -205,7 +211,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__item">
@@ -215,10 +223,13 @@
                   srcset="img/content/buckwheat-500g-desktop@1x.webp 1x, img/content/buckwheat-500g-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/content/buckwheat-500g-tablet@1x.webp 1x, img/content/buckwheat-500g-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/buckwheat-500g@1x.webp 1x, img/content/buckwheat-500g@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/buckwheat-500g@1x.webp 1x, img/content/buckwheat-500g@2x.webp 2x">
 
-                <source media="(min-width: 1440px)" srcset="img/content/buckwheat-500g-desktop@1x.png 1x, img/content/buckwheat-500g-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/content/buckwheat-500g-tablet@1x.png 1x, img/content/buckwheat-500g-tablet@2x.png 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/content/buckwheat-500g-desktop@1x.png 1x, img/content/buckwheat-500g-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/buckwheat-500g-tablet@1x.png 1x, img/content/buckwheat-500g-tablet@2x.png 2x">
                 <img class="catalog__image" src="img/content/buckwheat-500g@1x.png"
                   srcset="img/content/buckwheat-500g@2x.png 2x" alt="Cat energy pro 500г. курица" width="140"
                   height="112">
@@ -243,7 +254,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__item">
@@ -253,7 +266,8 @@
                   srcset="img/content/buckwheat-1000g-desktop@1x.webp 1x, img/content/buckwheat-1000g-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/content/buckwheat-1000g-tablet@1x.webp 1x, img/content/buckwheat-1000g-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/content/buckwheat-1000g@1x.webp 1x, img/content/buckwheat-1000g@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/buckwheat-1000g@1x.webp 1x, img/content/buckwheat-1000g@2x.webp 2x">
 
                 <source media="(min-width: 1440px)"
                   srcset="img/content/buckwheat-1000g-desktop@1x.png 1x, img/content/buckwheat-1000g-desktop@2x.png 2x">
@@ -283,7 +297,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__item">
@@ -322,7 +338,9 @@
                 </dl>
               </div>
             </div>
-            <a class="catalog__button button" href="#">Заказать</a>
+            <div class="catalog__button-wrapper">
+              <a class="catalog__button button" href="#">Заказать</a>
+            </div>
           </div>
 
           <div class="catalog__showing">
@@ -383,7 +401,10 @@
 
       <div class="contacts__wrapper">
         <div class="contacts__block">
-          <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__text">
+            <span class="contacts-text__decor">Приглашаем</span>
+            <span>к сотрудничеству дилеров!</span>
+          </p>
           <address class="contacts__address">
             <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__city">Санкт-Петербург</span>
@@ -418,7 +439,7 @@
       </a>
 
       <ul class="page-footer__social social">
-        <li class="social__item">
+        <li class="social__item social__item--vkontakte">
           <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в контакте">
             <svg class="social__icon social__icon--vk" width="23" height="16">
               <use xlink:href="img/svg/sprite.svg#icon-vkontakte"></use>

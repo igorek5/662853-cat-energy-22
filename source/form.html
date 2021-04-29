@@ -62,13 +62,13 @@
                   </li>
                   <li class="form__item">
                     <label class="form__label">
-                      <span class="form__text-field">Вес (кг):*</span>
+                      <span class="form__text-field form__text-field--number">Вес (кг):*</span>
                       <input class="form__input" type="text" name="cat-weight" placeholder="7" required>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__label">
-                      <span class="form__text-field">Возраст (лет):</span>
+                      <span class="form__text-field form__text-field--number">Возраст (лет):</span>
                       <input class="form__input" type="text" name="cat-age" placeholder="7">
                     </label>
                   </li>
@@ -104,14 +104,14 @@
                     <span class="form__text-field form__text-field--contacts">E-mail:*</span>
                     <input class="form__input form__input--contacts" type="email" name="email"
                       placeholder="Kuklachev@gmail.com" required>
-                    <svg class="form__input-icon" width="19" height="14">
+                    <svg class="form__input-icon form__input-icon--email" width="19" height="14">
                       <use xlink:href="img/svg/sprite.svg#icon-email"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__label form__label--contacts">
-                    <span class="form__text-field form__text-field--contacts">Телефон:*</span>
+                    <span class="form__text-field form__text-field--contacts form__text-field--phone">Телефон:*</span>
                     <input class="form__input form__input--contacts" type="tel" name="phone"
                       placeholder="8 (960) 900-60-90" required>
                     <svg class="form__input-icon" width="20" height="20">
@@ -167,7 +167,10 @@
 
       <div class="contacts__wrapper">
         <div class="contacts__block">
-          <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__text">
+            <span class="contacts-text__decor">Приглашаем</span>
+            <span>к сотрудничеству дилеров!</span>
+          </p>
           <address class="contacts__address">
             <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__city">Санкт-Петербург</span>
@@ -202,7 +205,7 @@
       </a>
 
       <ul class="page-footer__social social">
-        <li class="social__item">
+        <li class="social__item social__item--vkontakte">
           <a class="social__link" href="https://vk.com/htmlacademy" aria-label="Мы в контакте">
             <svg class="social__icon social__icon--vk" width="23" height="16">
               <use xlink:href="img/svg/sprite.svg#icon-vkontakte"></use>
