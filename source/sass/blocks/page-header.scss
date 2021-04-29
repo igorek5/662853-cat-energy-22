@@ -5,6 +5,10 @@
     align-items: center;
     padding: 24px 30px;
   }
+
+  .page-header__wrapper--inner {
+    padding-top: 26px;
+  }
 }
 
 @media (min-width: $desktop-width) {

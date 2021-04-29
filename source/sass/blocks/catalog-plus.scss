@@ -2,7 +2,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 37px;
-    margin-bottom: 81px;
+    margin-bottom: 80px;
     margin-left: 37px;
 
     font-size: 36px;
@@ -56,7 +56,7 @@
   border-top: 1px solid $color-grey5;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -188,7 +188,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 200px;
-    padding: 70px 124px;
+    padding-top: 72px;
+    padding-right: 124px;
+    padding-bottom: 68px;
+    padding-left: 160px;
 
     background-image: url("../img/bg/cat-case-tablet@1x.jpg");
 
@@ -220,13 +223,17 @@
     background-image: url("../img/svg/icon_gift.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     transform: translateX(-50%);
   }
 
   @media (min-width: $tablet-width) {
     &::before {
-      top: 55px;
+      top: 58px;
       left: 118px;
+
+      width: 80px;
+      height: 82px;
     }
   }
 

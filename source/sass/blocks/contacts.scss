@@ -24,7 +24,7 @@
 .contacts__block {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px 24px;
+  padding: 29px 19px 25px;
 
   @media (min-width: $tablet-width) {
     padding: 64px 71px 57px;
@@ -59,6 +59,15 @@
 
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+.contacts-text__decor {
+  display: block;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
 

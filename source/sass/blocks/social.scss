@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-left: 28px;
+    padding-left: 29px;
     max-width: 320px;
   }
 
@@ -23,11 +23,17 @@
   margin-right: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 21px;
+    margin-right: 16px;
   }
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.social__item--vkontakte {
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
   }
 }
 
