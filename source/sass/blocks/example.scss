@@ -62,7 +62,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 72px;
 
-    background-color: $color-grey;
+    background: linear-gradient(to right, $color-grey calc(50% + 590px), $color-grey4 calc(50% + 590px));
   }
 }
 

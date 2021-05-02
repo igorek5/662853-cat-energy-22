@@ -10,6 +10,7 @@
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/favicon180x.png">
   <link rel="manifest" href="favicons.webmanifest">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
@@ -17,7 +18,7 @@
   <header class="page-header">
     <div class="container">
       <div class="page-header__wrapper page-header__wrapper--inner">
-        <a class="page-header__logo" href="index.html">
+        <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/svg/logo-header-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/svg/logo-header-tablet.svg">
@@ -25,7 +26,7 @@
               alt="Логотип «Cat energy»">
           </picture>
         </a>
-        <nav class="page-header__nav main-nav open">
+        <nav class="page-header__nav main-nav open no-js">
           <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
           <ul class="main-nav__list main-nav__list--inner">
             <li class="main-nav__item">
@@ -47,6 +48,7 @@
       <section class="catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog__list">
+          <h2 class="visually-hidden">Список продукции</h2>
           <div class="catalog__item">
             <a class="catalog__image-link" href="#">
               <picture>
@@ -69,7 +71,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy pro 500 г</h2>
+                <h3 class="catalog__product-title">Cat energy pro 500 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -112,7 +114,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy pro 1000 г</h2>
+                <h3 class="catalog__product-title">Cat energy pro 1000 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -153,7 +155,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy pro 500 г</h2>
+                <h3 class="catalog__product-title">Cat energy pro 500 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -194,7 +196,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy pro 1000 г</h2>
+                <h3 class="catalog__product-title">Cat energy pro 1000 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -237,7 +239,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy slim 500 г</h2>
+                <h3 class="catalog__product-title">Cat energy slim 500 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -280,7 +282,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy slim 1000 г</h2>
+                <h3 class="catalog__product-title">Cat energy slim 1000 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -321,7 +323,7 @@
             </a>
             <div class="catalog__info">
               <a class="catalog__product-link" href="#">
-                <h2 class="catalog__product-title">Cat energy slim 500 г</h2>
+                <h3 class="catalog__product-title">Cat energy slim 500 г</h3>
               </a>
               <div class="catalog__block">
                 <dl class="catalog__string">
@@ -413,6 +415,10 @@
       </div>
 
       <div class="contacts__map">
+        <iframe class="contacts__map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858715770452!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619868139208!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen="" tabindex="0"
+          title="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)"
             srcset="img/content/location-desktop@1x.webp 1x, img/content/location-desktop@2x.webp 2x">
@@ -434,7 +440,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper wrapper container">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html" aria-label="Переход на главную страницу">
         <img src="img/svg/footer-logo.svg" width="128" height="24" alt="Логотип «Cat energy»">
       </a>
 

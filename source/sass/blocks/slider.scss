@@ -2,11 +2,29 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
 
-    background: linear-gradient(to bottom, #ffffff 172px, #f2f2f2 172px);
+    background: linear-gradient(to bottom, $color-white 172px, $color-grey4 172px);
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     background: transparent;
+  }
+}
+
+.slider__decor {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -72px;
+    right: 0;
+    bottom: 0;
+
+    width: calc(50% - 50px);
+
+    background-color: $color-grey4;
   }
 }
 
@@ -24,6 +42,7 @@
     position: relative;
     top: -261px;
 
+    margin-top: auto;
     margin-bottom: -261px;
   }
 }
@@ -153,12 +172,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .slider__toggle {
-    width: 428px;
-  }
-}
-
 .slider__toggle {
   width: 84px;
   height: 14px;
@@ -192,22 +205,49 @@
   appearance: none;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-
     width: 32px;
     height: 32px;
 
     background-color: $color-green;
     border: 12px solid $color-white;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px $color-grey5, 0 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 0 1px $color-grey5, 0 1px 3px rgba($color-black, 0.16);
 
     &:hover {
-      box-shadow: 0 0 0 1px $color-grey5, 0 2px 4px rgba(0, 0, 0, 0.19);
+      box-shadow: 0 0 0 1px $color-grey5, 0 2px 4px rgba($color-black, 0.19);
     }
 
     &:active {
-      box-shadow: 0 0 0 1px $color-green, 0 3px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 0 1px $color-green, 0 3px 5px rgba($color-black, 0.2);
+    }
+  }
+}
+
+.slider__toggle::-moz-range-thumb {
+  box-sizing: border-box;
+  width: 35px;
+  height: 6px;
+  margin-right: auto;
+
+  background-color: $color-green;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 32px;
+
+    background-color: $color-green;
+    border: 12px solid $color-white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px $color-grey5, 0 1px 3px rgba($color-black, 0.16);
+
+    &:hover {
+      box-shadow: 0 0 0 1px $color-grey5, 0 2px 4px rgba($color-black, 0.19);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $color-green, 0 3px 5px rgba($color-black, 0.2);
     }
   }
 }

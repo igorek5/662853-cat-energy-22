@@ -1,19 +1,17 @@
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 24px 30px;
+
+    &--inner {
+      padding-top: 26px;
+    }
   }
 
-  .page-header__wrapper--inner {
-    padding-top: 26px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__wrapper {
-    padding: 53px 110px;
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 54px;
   }
 }
 
