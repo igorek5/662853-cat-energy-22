@@ -21,6 +21,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -88,7 +89,7 @@ exports.scripts = scripts;
 // images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/svg/icons/*.svg"])
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
@@ -100,7 +101,7 @@ const optimizeImages = () => {
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/svg/icons/*.svg"])
     .pipe(gulp.dest("build/img"))
 }
 
@@ -135,10 +136,10 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.svg",
+    "source/img/svg/**/*.svg",
+    "!source/img/svg/icons/*.svg",
     "source/favicons.webmanifest",
-    "source/favicons",
-    "!source/img/icons/*.svg"
+    "source/favicons/**/*"
   ], {
     base: "source"
   })
